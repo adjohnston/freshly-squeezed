@@ -1,0 +1,8 @@
+//  LIST
+//  ====
+
+    ul, ol {
+        @extend %margin-bottom-only;
+
+        padding-left: gap();
+    }

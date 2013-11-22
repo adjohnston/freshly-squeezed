@@ -1,0 +1,41 @@
+//  TABLE
+//  =====
+
+    table {
+        @extend %margin-bottom;
+
+        width: cols(8);
+        margin-top: -1px;
+    }
+
+        thead {
+            background-color: $table
+        }
+
+        tbody {
+            @include text(.9);
+
+            tr:hover {
+                background-color: $highlight-table;
+            }
+        }
+
+            tr {
+
+            }
+
+                th {
+                    padding: 0 gap(.5);
+                    border: 1px solid $border;
+                    line-height: gap(1.5, -1px);
+                }
+
+                td {
+                    padding: 0 gap(.5);
+                    border: 1px solid $border;
+                    line-height: gap(1, -1px);
+
+                    &:hover {
+                        background-color: darken($highlight-table, 10%);
+                    }
+                }

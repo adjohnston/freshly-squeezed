@@ -1,0 +1,17 @@
+//  WRAPPERS
+//  ========
+
+//  wrapper
+//  =====================
+//  the main view wrapper
+//  =====================
+
+    .wrapper {
+        @extend %margin-left-right-auto;
+
+        width: cols(4);
+
+        @include media-query($max: $tab) {
+            width: cols(8);
+        }
+    }

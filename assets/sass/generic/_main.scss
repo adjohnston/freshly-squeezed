@@ -1,0 +1,18 @@
+//  MAIN
+//  ====
+
+    * {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+    
+    html {
+        font-size: $font-size;
+        line-height: $line-height;
+    }
+
+    body {
+        font-family: $sans-serif;
+        color: $text;
+    }

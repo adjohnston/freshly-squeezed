@@ -1,0 +1,8 @@
+//  RULES
+//  =====
+
+    .rule {
+        margin: 0 0 gap(1, -2px);
+        border: 1px solid;
+        border-color: $border transparent transparent $border;
+    }

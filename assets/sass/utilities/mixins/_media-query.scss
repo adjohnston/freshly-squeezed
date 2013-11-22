@@ -1,0 +1,25 @@
+//  MEDIA QUERY
+//  ===========
+
+    @mixin media-query ($min: "", $max: "") {
+        @if ($min != "" and $max != "") {
+            $min: $min / 16px + "em";
+            $max: ($max - 1px) / 16px + "em";
+
+            @media screen and (min-width: $min) and (max-width: $max) {
+                @content;
+            }
+        } @else {
+            @if ($min != "") {
+                @media screen and (min-width: $min) {
+                    @content;
+                }
+            }
+
+            @if ($max != "") {
+                @media screen and (max-width: $max) {
+                    @content;
+                }
+            }
+        }
+    }

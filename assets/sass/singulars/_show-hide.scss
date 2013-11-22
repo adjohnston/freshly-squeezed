@@ -1,0 +1,16 @@
+//  SHOW & HIDE
+//  ===========
+
+    @include show-hide;
+
+    @include media-query($mob) {
+        @include show-hide("mob-");
+    }
+
+    @include media-query($tab) {
+        @include show-hide("tab-");
+    }
+
+    @include media-query($lap) {
+        @include show-hide("lap-");
+    }

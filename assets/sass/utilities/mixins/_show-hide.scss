@@ -1,0 +1,18 @@
+//  SHOW & HIDE
+//  ===========
+
+    @mixin show-hide ($device-prefix: "") {
+        .#{$device-prefix}hide {
+            height: 0;
+            clip: rect(0, 0, 0, 0);
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .#{$device-prefix}show {
+            height: auto;
+            clip: auto;
+            position: static;
+            overflow: visible;
+        }
+    }

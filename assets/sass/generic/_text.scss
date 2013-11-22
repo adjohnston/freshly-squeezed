@@ -1,0 +1,42 @@
+//  TEXT
+//  ====
+
+//  headers
+//  =======
+
+    h1, h2, h3, h4, h5, h6 {
+        @extend %margin-bottom-only;
+
+        @include text(1);
+    }
+
+
+//  paragraphs
+//  ==========
+
+    p {
+        @extend %margin-bottom-only;
+
+        font-family: $serif;
+
+
+        //  paragraph - link
+        //  ----------------
+
+            a {
+                border-bottom: 1px solid currentcolor;
+
+                &:hover {
+                    border-bottom-width: 2px;
+                }
+            }
+    }
+
+
+//  links
+//  =====
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }

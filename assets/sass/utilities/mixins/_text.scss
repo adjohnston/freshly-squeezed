@@ -1,0 +1,18 @@
+//  TEXT
+//  =====================================================================
+//  text automatically formats for the font size and line height
+//  based on the default font size and line height and outputs
+//  em and rem values
+//  ---------------------------------------------------------------------
+//  @param  integer     the size of the font you want
+//  @param  integer     the parent size if different to default font size
+//  @param  string      output either em or rem
+//  =====================================================================
+
+    @mixin text ($size: 1, $parent-size: $font-size) {
+        font-size: font-size($size, $parent-size, em);
+        font-size: font-size($size, $parent-size);
+
+        line-height: line-height($size, $parent-size, em);
+        line-height: line-height($size, $parent-size);
+    }
