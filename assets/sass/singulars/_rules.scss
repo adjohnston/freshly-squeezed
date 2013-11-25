@@ -6,3 +6,16 @@
         border: 1px solid;
         border-color: $border transparent transparent $border;
     }
+
+
+//  table rule
+//  ==========
+
+    .table-rule {
+        height: gap(.25);
+        background-color: $table-border;
+
+        &:hover {
+            background-color: $table-border;
+        }
+    }

@@ -9,9 +9,9 @@
     .wrapper {
         @extend %margin-left-right-auto;
 
-        width: cols(4);
+        width: cols(5);
 
-        @include media-query($max: $tab) {
+        @include media-query($max: $lap) {
             width: cols(8);
         }
     }

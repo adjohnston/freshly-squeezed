@@ -162,8 +162,9 @@ code,
 kbd,
 pre,
 samp {
+    @include text(1);
+
     font-family: monospace, serif;
-    font-size: 1em;
 }
 
 /**
@@ -187,7 +188,7 @@ q {
  */
 
 small {
-    font-size: 80%;
+    @include text(.8);
 }
 
 /**
@@ -196,7 +197,8 @@ small {
 
 sub,
 sup {
-    font-size: 75%;
+    @include text(.75);
+    
     line-height: 0;
     position: relative;
     vertical-align: baseline;
