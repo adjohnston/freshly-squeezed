@@ -31,16 +31,18 @@
         "utilities/mixins/text",
         "utilities/mixins/media-query",
         "utilities/mixins/show-hide",
+        "utilities/mixins/push-pull",
 
 
     //  patterns
     //  --------
 
+        "utilities/patterns/margins",
+        "utilities/patterns/gutters",
         "utilities/patterns/font",
         "utilities/patterns/text",
         "utilities/patterns/display",
-        "utilities/patterns/margins",
-        "utilities/patterns/gutters",
+        "utilities/patterns/positions",
 
     //  third parties
     //  -------------
@@ -68,6 +70,7 @@
     "singulars/text",
     "singulars/margins",
     "singulars/gutters",
+    "singulars/push-pull",
     "singulars/show-hide",
     "singulars/wrappers",
     "singulars/rules",

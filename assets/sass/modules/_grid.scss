@@ -47,7 +47,7 @@
     //  small device spans
     //  ------------------
 
-        @include media-query($mob, $tab) {
+        @include media-query(0px, $tab) {
             @for $x from 1 through 3 {
                 .span#{$x}of8 {
                     width: cols(4);

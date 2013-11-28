@@ -1,44 +1,50 @@
 //  TABLE
 //  =====
 
-    table {
-        @extend %margin-bottom;
-
+    .table-wrap {
         width: cols(8);
         margin-top: -1px;
-        box-shadow: inset 0 1px $table-highlight;
+        overflow-x: auto;
     }
 
-        thead {
-            @include text(.9);
+        table {
+            @extend %margin-bottom;
 
-            background-color: $table-bg;
+            width: cols(8);
+            box-shadow: inset 0 1px $table-highlight;
+            overflow-x: auto;
         }
 
-        tbody {
-            @include text(.8);
+            thead {
+                @include text(.9);
 
-            > tr:nth-child(2n) {
-                background-color: $table-row-even-bg;
+                background-color: $table-bg;
             }
 
-            > tr:hover {
-                background-color: $table-cell-highlight;
-            }
-        }
+            tbody {
+                @include text(.8);
 
-                th {
-                    padding: 0 gap(.5);
-                    border: 1px solid $table-border;
-                    line-height: gap(1.5, -1px);
+                > tr:nth-child(2n) {
+                    background-color: $table-row-even-bg;
                 }
 
-                td {
-                    padding: 0 gap(.5);
-                    border: 1px solid $table-border;
-                    line-height: gap(1, -1px);
+                > tr:hover {
+                    background-color: $table-cell-highlight;
+                }
+            }
 
-                    &:hover {
-                        background-color: darken($table-cell-highlight, 10%);
+                    th {
+                        padding: 0 gap(.5);
+                        border: 1px solid $table-border;
+                        line-height: gap(1.5, -1px);
                     }
-                }
+
+                    td {
+                        padding: 0 gap(.5);
+                        border: 1px solid $table-border;
+                        line-height: gap(1, -1px);
+
+                        &:hover {
+                            background-color: darken($table-cell-highlight, 10%);
+                        }
+                    }

@@ -1,0 +1,27 @@
+//  PUSH & PULL MIXIN
+//  =================
+
+    @mixin push-pull ($push-pull, $cols-gttr, $x, $ofX) {
+        $dir:  "left";
+        $cols: 1;
+
+        @if ($push-pull == "pull") {
+            $dir: "right";
+        }
+
+        @if ($cols-gttr == "cols") {
+            @if ($ofX == 2) {
+                $cols: 4;
+            } @else if ($ofX == 4) {
+                $cols: 2;
+            }
+
+            .#{$push-pull + $x}of#{$ofX} {
+                #{$dir}: cols($x * $cols);
+            }
+        } @else {
+            .#{$push-pull + $x}gttrs {
+                #{$dir}: gap($x / 2);
+            }
+        }
+    }

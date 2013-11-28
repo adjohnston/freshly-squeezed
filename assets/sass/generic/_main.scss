@@ -10,6 +10,8 @@
     html {
         font-size: $font-size;
         line-height: $line-height;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     body {
