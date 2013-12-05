@@ -2,9 +2,15 @@
 //  =====
 
     .table-wrap {
+        @extend %margin-bottom;
+
         width: cols(8);
         margin-top: -1px;
         overflow-x: auto;
+
+        > table {
+            @extend %margin-bottom-none;
+        }
     }
 
         table {
