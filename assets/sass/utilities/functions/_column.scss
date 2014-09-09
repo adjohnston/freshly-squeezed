@@ -1,8 +1,0 @@
-//  COLUMNS
-//  =================================
-//  returns x columns of a total of 8
-//  =================================
-
-    @function cols ($x: 1) {
-        @return 100% / 8 * $x;
-    }
