@@ -1,5 +1,5 @@
 /* line 8, ../scss/modules/_grid.scss */
-.grid {
+.spans {
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   display: -moz-flex;
@@ -10,12 +10,129 @@
   flex-wrap: wrap;
 }
 
-/* line 19, ../scss/modules/_grid.scss */
-.whole {
+/* line 18, ../scss/modules/_grid.scss */
+[class*="span__"] {
+  -webkit-order: 0;
+  -moz-order: 0;
+  -ms-order: 0;
+  order: 0;
+}
+
+/* line 28, ../scss/modules/_grid.scss */
+.span__1of8 {
+  -webkit-flex: 0 1 12.5%;
+  -moz-flex: 0 1 12.5%;
+  -ms-flex: 0 1 12.5%;
+  flex: 0 1 12.5%;
+}
+
+/* line 28, ../scss/modules/_grid.scss */
+.span__2of8 {
+  -webkit-flex: 0 1 25%;
+  -moz-flex: 0 1 25%;
+  -ms-flex: 0 1 25%;
+  flex: 0 1 25%;
+}
+
+/* line 28, ../scss/modules/_grid.scss */
+.span__3of8 {
+  -webkit-flex: 0 1 37.5%;
+  -moz-flex: 0 1 37.5%;
+  -ms-flex: 0 1 37.5%;
+  flex: 0 1 37.5%;
+}
+
+/* line 28, ../scss/modules/_grid.scss */
+.span__4of8 {
+  -webkit-flex: 0 1 50%;
+  -moz-flex: 0 1 50%;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+}
+
+/* line 28, ../scss/modules/_grid.scss */
+.span__5of8 {
+  -webkit-flex: 0 1 62.5%;
+  -moz-flex: 0 1 62.5%;
+  -ms-flex: 0 1 62.5%;
+  flex: 0 1 62.5%;
+}
+
+/* line 28, ../scss/modules/_grid.scss */
+.span__6of8 {
+  -webkit-flex: 0 1 75%;
+  -moz-flex: 0 1 75%;
+  -ms-flex: 0 1 75%;
+  flex: 0 1 75%;
+}
+
+/* line 28, ../scss/modules/_grid.scss */
+.span__7of8 {
+  -webkit-flex: 0 1 87.5%;
+  -moz-flex: 0 1 87.5%;
+  -ms-flex: 0 1 87.5%;
+  flex: 0 1 87.5%;
+}
+
+/* line 28, ../scss/modules/_grid.scss */
+.span__8of8 {
+  -webkit-flex: 0 1 100%;
+  -moz-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
   flex: 0 1 100%;
 }
 
-/* line 23, ../scss/modules/_grid.scss */
-.half {
-  flex: 0 1 50%;
+@media screen and (max-width: 992px) {
+  /* line 43, ../scss/modules/_grid.scss */
+  .span__1of4 {
+    -webkit-flex: 0 1 25%;
+    -moz-flex: 0 1 25%;
+    -ms-flex: 0 1 25%;
+    flex: 0 1 25%;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 43, ../scss/modules/_grid.scss */
+  .span__2of4 {
+    -webkit-flex: 0 1 50%;
+    -moz-flex: 0 1 50%;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 43, ../scss/modules/_grid.scss */
+  .span__3of4 {
+    -webkit-flex: 0 1 75%;
+    -moz-flex: 0 1 75%;
+    -ms-flex: 0 1 75%;
+    flex: 0 1 75%;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 43, ../scss/modules/_grid.scss */
+  .span__4of4 {
+    -webkit-flex: 0 1 100%;
+    -moz-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 57, ../scss/modules/_grid.scss */
+  .span__1of2 {
+    -webkit-flex: 0 1 50%;
+    -moz-flex: 0 1 50%;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 57, ../scss/modules/_grid.scss */
+  .span__2of2 {
+    -webkit-flex: 0 1 100%;
+    -moz-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+  }
 }
