@@ -8,11 +8,11 @@
         $min: $min / 16px + em;
       }
 
-      @if ($max != "" && $max > 0px) {
+      @if ($max != "" and $max > 0px) {
         $max: ($max - 1px) / 16px + em;
       }
 
-      @if ($min != "" && $max != "") {
+      @if ($min != "" and $max != "") {
 
         @media screen and (min-width: $min) and (max-width: $max) {
           @content;
