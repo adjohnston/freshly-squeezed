@@ -2,7 +2,7 @@
 //  grid : modules
 //  --------------
 
-@if ($use-flexbox) {
+@if $use-flexbox {
 
   //  flexbox grid
       .spans {
