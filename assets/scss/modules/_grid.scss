@@ -23,6 +23,7 @@
             }
           }
 
+      //  desktop spans
           @for $n from 1 through $grid-of {
 
             .span__#{$n}of#{$grid-of} {
@@ -35,35 +36,37 @@
 
           }
 
-      //  responsive spans
           @if $is-responsive {
-            @for $n from 1 through ($grid-of / 2) {
 
-              @media screen and (max-width: 992px) { // replace with breakpoint mixin
-                .span__#{$n}of#{($grid-of / 2)} {
-                  @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
+            //  tablet spans
+                @for $n from 1 through ($grid-of / 2) {
 
-                    #{$vendor}flex: 0 1 (100% / $grid-of * ($n * 2));
+                  @include breakpoint($max: 992px) {
+                    .span__#{$n}of#{($grid-of / 2)} {
+                      @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
 
+                        #{$vendor}flex: 0 1 (100% / $grid-of * ($n * 2));
+
+                      }
+                    }
                   }
+
                 }
-              }
 
-            }
+            //  mobile spans
+                @for $n from 1 through ($grid-of / 4) {
 
-            @for $n from 1 through ($grid-of / 4) {
+                  @include breakpoint ($max: 600px) {
+                    .span__#{$n}of#{($grid-of / 4)} {
+                      @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
 
-              @media screen and (max-width: 600px) { // replace with breakpoint mixin
-                .span__#{$n}of#{($grid-of / 4)} {
-                  @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
+                        #{$vendor}flex: 0 1 (100% / $grid-of * ($n * 4));
 
-                    #{$vendor}flex: 0 1 (100% / $grid-of * ($n * 4));
-
+                      }
+                    }
                   }
-                }
-              }
 
-            }
+                }
           }
 
 
