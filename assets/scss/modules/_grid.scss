@@ -1,0 +1,31 @@
+//  --------------
+//  grid : modules
+//  --------------
+
+@if ($use-flexbox) {
+
+  //  flexbox grid
+      .grid {
+        @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
+
+          display: #{$vendor}flex;
+          #{$vendor}flex-wrap: wrap;
+
+        }
+      }
+
+
+  //  spans
+      .whole {
+        flex: 0 1 100%;
+      }
+
+      .half {
+        flex: 0 1 50%;
+      }
+
+} @else {
+
+  //  classic grid system to go here
+
+}

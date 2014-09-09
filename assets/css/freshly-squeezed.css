@@ -1,0 +1,21 @@
+/* line 8, ../scss/modules/_grid.scss */
+.grid {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: -moz-flex;
+  -moz-flex-wrap: wrap;
+  display: -ms-flex;
+  -ms-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 19, ../scss/modules/_grid.scss */
+.whole {
+  flex: 0 1 100%;
+}
+
+/* line 23, ../scss/modules/_grid.scss */
+.half {
+  flex: 0 1 50%;
+}
