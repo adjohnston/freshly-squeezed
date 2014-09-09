@@ -1,0 +1,25 @@
+{
+  "name": "freshly-squeezed",
+  "version": "0.0.0",
+  "homepage": "https://github.com/adjohnston/freshly-squeezed",
+  "authors": [
+    "Adam Johnston <adam.johnston3679@gmail.com>"
+  ],
+  "description": "A quickstart, lightweight, modular OOCSS framework",
+  "keywords": [
+    "lightweight",
+    "modular",
+    "css",
+    "scss",
+    "bem",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
