@@ -2,7 +2,7 @@
   "name": "freshly-squeezed",
   "version": "0.0.0",
   "homepage": "https://github.com/adjohnston/freshly-squeezed",
-  "main": "assets/css/freshly-squeezed.css",
+  "main": "freshly-squeezed.css",
   "authors": [
     "Adam Johnston <adam.johnston3679@gmail.com>"
   ],
@@ -15,12 +15,9 @@
     "bem",
     "framework"
   ],
-  "license": "MIT",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "**/*",
+    "!freshly-squeezed.js",
+    "!bower.json"
   ]
 }
