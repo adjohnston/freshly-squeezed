@@ -18,64 +18,96 @@
   order: 0;
 }
 
-/* line 29, ../scss/modules/_grid.scss */
-.span__1of8 {
-  -webkit-flex: 0 1 12.5%;
-  -moz-flex: 0 1 12.5%;
-  -ms-flex: 0 1 12.5%;
-  flex: 0 1 12.5%;
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__1of12 {
+  -webkit-flex: 0 1 8.33333%;
+  -moz-flex: 0 1 8.33333%;
+  -ms-flex: 0 1 8.33333%;
+  flex: 0 1 8.33333%;
 }
 
-/* line 29, ../scss/modules/_grid.scss */
-.span__2of8 {
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__2of12 {
+  -webkit-flex: 0 1 16.66667%;
+  -moz-flex: 0 1 16.66667%;
+  -ms-flex: 0 1 16.66667%;
+  flex: 0 1 16.66667%;
+}
+
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__3of12 {
   -webkit-flex: 0 1 25%;
   -moz-flex: 0 1 25%;
   -ms-flex: 0 1 25%;
   flex: 0 1 25%;
 }
 
-/* line 29, ../scss/modules/_grid.scss */
-.span__3of8 {
-  -webkit-flex: 0 1 37.5%;
-  -moz-flex: 0 1 37.5%;
-  -ms-flex: 0 1 37.5%;
-  flex: 0 1 37.5%;
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__4of12 {
+  -webkit-flex: 0 1 33.33333%;
+  -moz-flex: 0 1 33.33333%;
+  -ms-flex: 0 1 33.33333%;
+  flex: 0 1 33.33333%;
 }
 
-/* line 29, ../scss/modules/_grid.scss */
-.span__4of8 {
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__5of12 {
+  -webkit-flex: 0 1 41.66667%;
+  -moz-flex: 0 1 41.66667%;
+  -ms-flex: 0 1 41.66667%;
+  flex: 0 1 41.66667%;
+}
+
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__6of12 {
   -webkit-flex: 0 1 50%;
   -moz-flex: 0 1 50%;
   -ms-flex: 0 1 50%;
   flex: 0 1 50%;
 }
 
-/* line 29, ../scss/modules/_grid.scss */
-.span__5of8 {
-  -webkit-flex: 0 1 62.5%;
-  -moz-flex: 0 1 62.5%;
-  -ms-flex: 0 1 62.5%;
-  flex: 0 1 62.5%;
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__7of12 {
+  -webkit-flex: 0 1 58.33333%;
+  -moz-flex: 0 1 58.33333%;
+  -ms-flex: 0 1 58.33333%;
+  flex: 0 1 58.33333%;
 }
 
-/* line 29, ../scss/modules/_grid.scss */
-.span__6of8 {
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__8of12 {
+  -webkit-flex: 0 1 66.66667%;
+  -moz-flex: 0 1 66.66667%;
+  -ms-flex: 0 1 66.66667%;
+  flex: 0 1 66.66667%;
+}
+
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__9of12 {
   -webkit-flex: 0 1 75%;
   -moz-flex: 0 1 75%;
   -ms-flex: 0 1 75%;
   flex: 0 1 75%;
 }
 
-/* line 29, ../scss/modules/_grid.scss */
-.span__7of8 {
-  -webkit-flex: 0 1 87.5%;
-  -moz-flex: 0 1 87.5%;
-  -ms-flex: 0 1 87.5%;
-  flex: 0 1 87.5%;
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__10of12 {
+  -webkit-flex: 0 1 83.33333%;
+  -moz-flex: 0 1 83.33333%;
+  -ms-flex: 0 1 83.33333%;
+  flex: 0 1 83.33333%;
 }
 
-/* line 29, ../scss/modules/_grid.scss */
-.span__8of8 {
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__11of12 {
+  -webkit-flex: 0 1 91.66667%;
+  -moz-flex: 0 1 91.66667%;
+  -ms-flex: 0 1 91.66667%;
+  flex: 0 1 91.66667%;
+}
+
+/* line 25, ../scss/utils/mixins/_generate-spans.scss */
+.span__12of12 {
   -webkit-flex: 0 1 100%;
   -moz-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
@@ -83,35 +115,48 @@
 }
 
 @media screen and (max-width: 61.9375em) {
-  /* line 45, ../scss/modules/_grid.scss */
-  .span__1of4 {
-    -webkit-flex: 0 1 25%;
-    -moz-flex: 0 1 25%;
-    -ms-flex: 0 1 25%;
-    flex: 0 1 25%;
+  /* line 11, ../scss/utils/mixins/_generate-spans.scss */
+  .span__1of6 {
+    -webkit-flex: 0 1 16.66667%;
+    -moz-flex: 0 1 16.66667%;
+    -ms-flex: 0 1 16.66667%;
+    flex: 0 1 16.66667%;
   }
-}
-@media screen and (max-width: 61.9375em) {
-  /* line 45, ../scss/modules/_grid.scss */
-  .span__2of4 {
+
+  /* line 11, ../scss/utils/mixins/_generate-spans.scss */
+  .span__2of6 {
+    -webkit-flex: 0 1 33.33333%;
+    -moz-flex: 0 1 33.33333%;
+    -ms-flex: 0 1 33.33333%;
+    flex: 0 1 33.33333%;
+  }
+
+  /* line 11, ../scss/utils/mixins/_generate-spans.scss */
+  .span__3of6 {
     -webkit-flex: 0 1 50%;
     -moz-flex: 0 1 50%;
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
   }
-}
-@media screen and (max-width: 61.9375em) {
-  /* line 45, ../scss/modules/_grid.scss */
-  .span__3of4 {
-    -webkit-flex: 0 1 75%;
-    -moz-flex: 0 1 75%;
-    -ms-flex: 0 1 75%;
-    flex: 0 1 75%;
+
+  /* line 11, ../scss/utils/mixins/_generate-spans.scss */
+  .span__4of6 {
+    -webkit-flex: 0 1 66.66667%;
+    -moz-flex: 0 1 66.66667%;
+    -ms-flex: 0 1 66.66667%;
+    flex: 0 1 66.66667%;
   }
-}
-@media screen and (max-width: 61.9375em) {
-  /* line 45, ../scss/modules/_grid.scss */
-  .span__4of4 {
+
+  /* line 11, ../scss/utils/mixins/_generate-spans.scss */
+  .span__5of6 {
+    -webkit-flex: 0 1 83.33333%;
+    -moz-flex: 0 1 83.33333%;
+    -ms-flex: 0 1 83.33333%;
+    flex: 0 1 83.33333%;
+  }
+
+  /* line 11, ../scss/utils/mixins/_generate-spans.scss */
+  .span__6of6 {
     -webkit-flex: 0 1 100%;
     -moz-flex: 0 1 100%;
     -ms-flex: 0 1 100%;
@@ -119,17 +164,24 @@
   }
 }
 @media screen and (max-width: 37.4375em) {
-  /* line 60, ../scss/modules/_grid.scss */
-  .span__1of2 {
-    -webkit-flex: 0 1 50%;
-    -moz-flex: 0 1 50%;
-    -ms-flex: 0 1 50%;
-    flex: 0 1 50%;
+  /* line 11, ../scss/utils/mixins/_generate-spans.scss */
+  .span__1of3 {
+    -webkit-flex: 0 1 33.33333%;
+    -moz-flex: 0 1 33.33333%;
+    -ms-flex: 0 1 33.33333%;
+    flex: 0 1 33.33333%;
   }
-}
-@media screen and (max-width: 37.4375em) {
-  /* line 60, ../scss/modules/_grid.scss */
-  .span__2of2 {
+
+  /* line 11, ../scss/utils/mixins/_generate-spans.scss */
+  .span__2of3 {
+    -webkit-flex: 0 1 66.66667%;
+    -moz-flex: 0 1 66.66667%;
+    -ms-flex: 0 1 66.66667%;
+    flex: 0 1 66.66667%;
+  }
+
+  /* line 11, ../scss/utils/mixins/_generate-spans.scss */
+  .span__3of3 {
     -webkit-flex: 0 1 100%;
     -moz-flex: 0 1 100%;
     -ms-flex: 0 1 100%;

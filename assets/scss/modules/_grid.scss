@@ -24,49 +24,15 @@
           }
 
       //  desktop spans
-          @for $n from 1 through $grid-of {
-
-            .span__#{$n}of#{$grid-of} {
-              @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
-
-                #{$vendor}flex: 0 1 (100% / $grid-of * $n);
-
-              }
-            }
-
-          }
+          @include generate-spans();
 
           @if $is-responsive {
 
             //  tablet spans
-                @for $n from 1 through ($grid-of / 2) {
-
-                  @include breakpoint($max: 992px) {
-                    .span__#{$n}of#{($grid-of / 2)} {
-                      @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
-
-                        #{$vendor}flex: 0 1 (100% / $grid-of * ($n * 2));
-
-                      }
-                    }
-                  }
-
-                }
+                @include generate-spans(check-division($grid-columns, 2), 992px);
 
             //  mobile spans
-                @for $n from 1 through ($grid-of / 4) {
-
-                  @include breakpoint ($max: 600px) {
-                    .span__#{$n}of#{($grid-of / 4)} {
-                      @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
-
-                        #{$vendor}flex: 0 1 (100% / $grid-of * ($n * 4));
-
-                      }
-                    }
-                  }
-
-                }
+                @include generate-spans(check-division($grid-columns, 4), 600px);
           }
 
 
