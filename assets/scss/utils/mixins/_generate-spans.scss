@@ -1,6 +1,6 @@
-//  ------------------------------
-//  generate spans : mixin : utils
-//  ------------------------------
+//  -------------------------------
+//  generate spans : mixins : utils
+//  -------------------------------
 
     @mixin generate-spans ($columns: $grid-columns, $breakpoint: "") {
       @if ($breakpoint != "") {
