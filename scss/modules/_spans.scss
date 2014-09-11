@@ -12,7 +12,7 @@
             @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
 
               display: #{$vendor}flex;
-              #{$vendor}flex-wrap: wrap;
+              #{$vendor}flex-flow: row wrap;
 
             }
           }
