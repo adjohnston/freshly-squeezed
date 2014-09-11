@@ -13,19 +13,23 @@
 
     //  functions
         "utils/functions/check-division",
+        "utils/functions/gap",
 
     //  mixins
         "utils/mixins/breakpoint",
         "utils/mixins/generate-spans",
 
     //  third-party
+        "utils/third-party/normalize",
 
 
 //  generic
     "generic/main",
 
+
 //  modules
-    "modules/grid";
+    "modules/spans";
+
 
 //  singulars
 
