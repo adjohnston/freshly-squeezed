@@ -1,0 +1,49 @@
+//  ---------------
+//  spans : modules
+//  ---------------
+
+    @if $use-flexbox {
+
+      //  flexbox spans
+          .spans {
+            padding-left:  gap(.5);
+            padding-right: gap(.5);
+
+            @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
+
+              display: #{$vendor}flex;
+              #{$vendor}flex-wrap: wrap;
+
+            }
+          }
+
+          //  spans
+              [class*="span__"] {
+                padding-left:  gap(.5);
+                padding-right: gap(.5);
+
+                @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
+
+                  #{$vendor}order: 0;
+
+                }
+              }
+
+          //  desktop spans
+              @include generate-spans();
+
+              @if $is-responsive {
+
+                //  tablet spans
+                    @include generate-spans(check-division($grid-columns, 2), 992px);
+
+                //  mobile spans
+                    @include generate-spans(check-division($grid-columns, 4), 600px);
+              }
+
+
+    } @else {
+
+      //  classic grid system to go here
+
+    }
