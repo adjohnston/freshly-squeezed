@@ -18,6 +18,7 @@
   "ignore": [
     "**/*",
     "!freshly-squeezed.js",
-    "!bower.json"
+    "!scss/*",
+    "!config.rb"
   ]
 }
