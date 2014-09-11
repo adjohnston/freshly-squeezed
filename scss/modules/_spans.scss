@@ -1,21 +1,27 @@
-//  --------------
-//  grid : modules
-//  --------------
+//  ---------------
+//  spans : modules
+//  ---------------
 
     @if $use-flexbox {
 
-      //  flexbox grid
+      //  flexbox spans
           .spans {
+            padding-left:  gap(.5);
+            padding-right: gap(.5);
+
             @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
 
               display: #{$vendor}flex;
-              #{$vendor}flex-wrap: wrap;
+              #{$vendor}flex-flow: row wrap;
 
             }
           }
 
           //  spans
               [class*="span__"] {
+                padding-left:  gap(.5);
+                padding-right: gap(.5);
+
                 @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
 
                   #{$vendor}order: 0;
