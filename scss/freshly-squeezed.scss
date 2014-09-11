@@ -13,11 +13,13 @@
 
     //  functions
         "utils/functions/check-division",
+        "utils/functions/check-for-nearest-quarter",
         "utils/functions/gap",
 
     //  mixins
         "utils/mixins/breakpoint",
         "utils/mixins/generate-spans",
+        "utils/mixins/text-size",
 
     //  third-party
         "utils/third-party/normalize",
@@ -25,13 +27,15 @@
 
 //  generic
     "generic/main",
+    "generic/text",
 
 
 //  modules
-    "modules/spans";
+    "modules/spans",
 
 
 //  singulars
 
 
 //  patterns
+    "patterns/margins-gutters";
