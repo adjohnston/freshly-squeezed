@@ -1,20 +1,155 @@
 <!doctype html>
 <html lang="en-gb">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width-device-width, initial-scale-1">
 
-    <title>Freshly Squeezed</title>
+      <title>Freshly Squeezed</title>
 
-    <link rel="stylesheet" href="freshly-squeezed.css" media="screen">
-</head>
+      <link rel="stylesheet" href="freshly-squeezed.css" media="screen">
+  </head>
 
-<body>
-<h1>Main header</h1>
-  <div class="spans">
-    <div class="span__2of4 span__8of8">whole</div>
-    <div class="span__4of8">half</div>
-    <div class="span__4of8">half</div>
-  </div>
-</body>
+  <body>
+
+    <h1>H1 title</h1>
+    <h2>H2 title</h2>
+    <h3>H3 title</h3>
+    <h4>H4 title</h4>
+    <h5>H5 title</h5>
+    <h6>H6 title</h6>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <em>Vivamus in commodo quam</em>. Nam efficitur lacus vitae arcu pulvinar vestibulum. Curabitur ex risus, laoreet sit amet elementum nec, finibus ac velit. Fusce eleifend quam non rhoncus congue. Donec pulvinar cursus aliquam. Integer eu lacus laoreet mi viverra eleifend. Duis sagittis metus viverra suscipit tincidunt. Praesent dictum lectus at suscipit semper. Fusce pellentesque, nulla sed bibendum luctus, dolor lorem dictum lorem, non aliquet lorem est non elit.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in commodo quam. <strong>Nam efficitur lacus</strong> vitae arcu pulvinar vestibulum. Curabitur ex risus, laoreet sit amet elementum nec, finibus ac velit. Fusce eleifend quam non rhoncus congue. Donec pulvinar cursus aliquam. Integer eu lacus laoreet mi viverra eleifend. Duis sagittis metus viverra suscipit tincidunt. Praesent dictum lectus at suscipit semper. Fusce pellentesque, nulla sed bibendum luctus, dolor lorem dictum lorem, non aliquet lorem est non elit.</p>
+
+    <ul>
+      <li>Curabitur ex risus, laoreet sit amet elementum nec, finibus ac velit.</li>
+      <li>Duis sagittis metus viverra suscipit tincidunt.</li>
+      <li>Curabitur ex risus, laoreet Duis sagittis metus viverra suscipit tincidunt.</li>
+      <li>nulla sed bibendum luctus, dolor lorem dictum lorem, non aliquet lorem est non elit.</li>
+    </ul>
+
+    <ol>
+      <li>Curabitur ex risus, laoreet sit amet elementum nec, finibus ac velit.</li>
+      <li>Duis sagittis metus viverra suscipit tincidunt.</li>
+      <li>Curabitur ex risus, laoreet Duis sagittis metus viverra suscipit tincidunt.</li>
+      <li>nulla sed bibendum luctus, dolor lorem dictum lorem, non aliquet lorem est non elit.</li>
+    </ol>
+
+    <dl>
+      <dt>Duis sagittis metus viverra suscipit tincidunt. Curabitur ex risus, laoreet sit amet</dt>
+      <dd>nulla sed bibendum luctus, dolor lorem dictum lorem, non aliquet lorem est non elit. Vivamus in commodo quam. Nam efficitur lacus vitae arcu pulvinar vestibulum. Curabitur ex risus, laoreet sit amet elementum nec, finibus ac velit.</dd>
+
+      <dt>Curabitur ex risus, laoreet sit amet</dt>
+      <dd>Vivamus in commodo quam. Nam efficitur lacus vitae arcu pulvinar vestibulum. Curabitur ex risus, laoreet sit amet elementum nec, finibus ac velit.</dd>
+
+      <dt>Curabitur Duis sagittis metus viverra suscipit tincidunt.</dt>
+      <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex risus, laoreet sit amet elementum nec, finibus ac velit.</dd>
+
+      <dt>Ex risus, laoreet sit amet Curabitur ex risus, laoreet sit amet</dt>
+      <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in commodo quam. Nam efficitur lacus vitae arcu pulvinar vestibulum. Curabitur ex risus, laoreet sit amet elementum nec, finibus ac velit.</dd>
+    </dl>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Column 01</th>
+          <th>Column 02</th>
+          <th>Column 03</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Col01 Row 01</td>
+          <td>Col02 Row 01</td>
+          <td>Col03 Row 01</td>
+        </tr>
+        <tr>
+          <td>Col01 Row 02</td>
+          <td>Col02 Row 02</td>
+          <td>Col03 Row 02</td>
+        </tr>
+          <td>Col01 Row 03</td>
+          <td>Col02 Row 03</td>
+          <td>Col03 Row 03</td>
+      </tbody>
+    </table>
+
+    <form action="">
+      <fieldset>
+        <ol>
+          <li class="">
+            <label class="req" for="demo-first-name">First Name</label>
+            <input type="text" aria-required="true" placeholder="e.g. John" id="demo-first-name">
+          </li>
+
+          <li class="">
+            <label class="req" for="demo-last-name">Last Name</label>
+            <input type="text" aria-required="true" placeholder="e.g. Smith" id="demo-last-name">
+          </li>
+
+          <li class="">
+            <label class="req mgn-none">Gender</label>
+
+            <div class="">
+              <input type="radio" aria-required="true" selected="" id="demo-male" name="demo-gender" class="radio__input">
+              <label for="demo-male" class="radio__label">Male</label>
+            </div>
+
+            <div class="">
+              <input type="radio" aria-required="true" id="demo-female" name="demo-gender" class="radio__input">
+              <label for="demo-female" class="radio__label">Female</label>
+            </div>
+          </li>
+
+          <li class="">
+            <input type="checkbox" aria-required="true" checked="" id="demo-accept-terms" class="checkbox__input">
+            <label for="demo-accept-terms" class="checkbox__label">Accept terms and conditions?</label>
+          </li>
+
+          <li class="">
+            <label class="req" for="demo-email">Email</label>
+            <input type="email" aria-required="true" placeholder="e.g. john.smith@example.com" id="demo-email">
+          </li>
+
+          <li class="">
+            <label class="req" for="demo-phone">Phone</label>
+            <input type="tel" aria-required="true" placeholder="e.g. +44 0708 123 456" id="demo-phone">
+          </li>
+
+          <li class="">
+            <label for="demo-mobile">Mobile</label>
+            <input type="tel" placeholder="e.g. +44 7123 4567" id="demo-mobile">
+          </li>
+
+          <li class="">
+              <label class="req" for="demo-country">Country</label>
+              <div class="dropdown">
+                <select aria-required="true" class="dropdown__input" id="demo-country">
+                  <option selected="" value="default">-- select a language--</option>
+                  <option value="uk">UK</option>
+                  <option value="us">US</option>
+                  <option value="hungary">Hungary</option>
+                </select>
+              </div>
+          </li>
+
+          <li class="">
+            <label for="demo-file-upload">Upload File</label>
+            <div class="fileupload">
+              <input type="file" accept="" name="file_upload" id="file_upload">
+            </div>
+          </li>
+
+          <li>
+            <label for="demo-comment">Leave a comment</label>
+            <textarea id="demo-comment"></textarea>
+          </li>
+          <li><button type="sumbit">Submit button</button></li>
+        </ol>
+      </fieldset>
+    </form>
+
+
+  </body>
 </html>
