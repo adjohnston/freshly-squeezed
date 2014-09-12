@@ -1,0 +1,16 @@
+#grid-demo {
+  background-color: pink;
+}
+
+  #grid-demo > div {
+    padding: 0;
+    background-color: white;
+    border-width: 0 .75em 1.5em;
+    border-style: solid;
+    border-color: pink;
+    text-align: center;
+  }
+
+  #grid-demo > div:first-child {
+    border-top-width: 1.5em;
+  }
