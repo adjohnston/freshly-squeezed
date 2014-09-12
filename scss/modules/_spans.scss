@@ -1,22 +1,28 @@
-//  --------------
-//  grid : modules
-//  --------------
+//  ---------------
+//  spans : modules
+//  ---------------
 
     @if $use-flexbox {
 
-      //  flexbox grid
+      //  flexbox spans
           .spans {
-            @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
+            padding-left:  gap(.5);
+            padding-right: gap(.5);
+
+            @each $vendor in -webkit-, -moz-, -ms-, "" {
 
               display: #{$vendor}flex;
-              #{$vendor}flex-wrap: wrap;
+              #{$vendor}flex-flow: row wrap;
 
             }
           }
 
           //  spans
               [class*="span__"] {
-                @each $vendor in "-webkit-", "-moz-", "-ms-", "" {
+                padding-left:  gap(.5);
+                padding-right: gap(.5);
+
+                @each $vendor in -webkit-, -moz-, -ms-, "" {
 
                   #{$vendor}order: 0;
 
@@ -24,6 +30,10 @@
               }
 
           //  desktop spans
+              .span__fill {
+                flex: 1 1 0;
+              }
+
               @include generate-spans();
 
               @if $is-responsive {

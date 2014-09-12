@@ -1,1 +1,49 @@
-form ol{list-style-type:none}form label{font-weight:600}.spans{display:-webkit-flex;-webkit-flex-wrap:wrap;display:-moz-flex;-moz-flex-wrap:wrap;display:-ms-flex;-ms-flex-wrap:wrap;display:flex;flex-wrap:wrap}[class*="span__"]{-webkit-order:0;-moz-order:0;-ms-order:0;order:0}.span__1of12{-webkit-flex:0 1 8.33333%;-moz-flex:0 1 8.33333%;-ms-flex:0 1 8.33333%;flex:0 1 8.33333%}.span__2of12{-webkit-flex:0 1 16.66667%;-moz-flex:0 1 16.66667%;-ms-flex:0 1 16.66667%;flex:0 1 16.66667%}.span__3of12{-webkit-flex:0 1 25%;-moz-flex:0 1 25%;-ms-flex:0 1 25%;flex:0 1 25%}.span__4of12{-webkit-flex:0 1 33.33333%;-moz-flex:0 1 33.33333%;-ms-flex:0 1 33.33333%;flex:0 1 33.33333%}.span__5of12{-webkit-flex:0 1 41.66667%;-moz-flex:0 1 41.66667%;-ms-flex:0 1 41.66667%;flex:0 1 41.66667%}.span__6of12{-webkit-flex:0 1 50%;-moz-flex:0 1 50%;-ms-flex:0 1 50%;flex:0 1 50%}.span__7of12{-webkit-flex:0 1 58.33333%;-moz-flex:0 1 58.33333%;-ms-flex:0 1 58.33333%;flex:0 1 58.33333%}.span__8of12{-webkit-flex:0 1 66.66667%;-moz-flex:0 1 66.66667%;-ms-flex:0 1 66.66667%;flex:0 1 66.66667%}.span__9of12{-webkit-flex:0 1 75%;-moz-flex:0 1 75%;-ms-flex:0 1 75%;flex:0 1 75%}.span__10of12{-webkit-flex:0 1 83.33333%;-moz-flex:0 1 83.33333%;-ms-flex:0 1 83.33333%;flex:0 1 83.33333%}.span__11of12{-webkit-flex:0 1 91.66667%;-moz-flex:0 1 91.66667%;-ms-flex:0 1 91.66667%;flex:0 1 91.66667%}.span__12of12{-webkit-flex:0 1 100%;-moz-flex:0 1 100%;-ms-flex:0 1 100%;flex:0 1 100%}@media screen and (max-width: 61.9375em){.span__1of6{-webkit-flex:0 1 16.66667%;-moz-flex:0 1 16.66667%;-ms-flex:0 1 16.66667%;flex:0 1 16.66667%}.span__2of6{-webkit-flex:0 1 33.33333%;-moz-flex:0 1 33.33333%;-ms-flex:0 1 33.33333%;flex:0 1 33.33333%}.span__3of6{-webkit-flex:0 1 50%;-moz-flex:0 1 50%;-ms-flex:0 1 50%;flex:0 1 50%}.span__4of6{-webkit-flex:0 1 66.66667%;-moz-flex:0 1 66.66667%;-ms-flex:0 1 66.66667%;flex:0 1 66.66667%}.span__5of6{-webkit-flex:0 1 83.33333%;-moz-flex:0 1 83.33333%;-ms-flex:0 1 83.33333%;flex:0 1 83.33333%}.span__6of6{-webkit-flex:0 1 100%;-moz-flex:0 1 100%;-ms-flex:0 1 100%;flex:0 1 100%}}@media screen and (max-width: 37.4375em){.span__1of3{-webkit-flex:0 1 33.33333%;-moz-flex:0 1 33.33333%;-ms-flex:0 1 33.33333%;flex:0 1 33.33333%}.span__2of3{-webkit-flex:0 1 66.66667%;-moz-flex:0 1 66.66667%;-ms-flex:0 1 66.66667%;flex:0 1 66.66667%}.span__3of3{-webkit-flex:0 1 100%;-moz-flex:0 1 100%;-ms-flex:0 1 100%;flex:0 1 100%}}
+/*
+Error: Invalid CSS after "..."generic/text",": expected file to import (string or url()), was "<<<<<<< HEAD"
+        on line 31 of /Users/dcastillo/Sites/freshly-squeezed/scss/freshly-squeezed.scss
+
+26: 
+27: 
+28: //  generic
+29:     "generic/main",
+30:     "generic/text",
+31: <<<<<<< HEAD
+32:     "generic/tables",
+33:     "generic/lists",
+34:     "generic/inputs",
+35:     "generic/forms",
+36: 
+
+Backtrace:
+/Users/dcastillo/Sites/freshly-squeezed/scss/freshly-squeezed.scss:31
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:1163:in `expected'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:1099:in `expected'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:1079:in `expr!'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:368:in `block in import_directive'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:367:in `loop'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:367:in `import_directive'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:219:in `special_directive'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:194:in `directive'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:660:in `block_child'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:650:in `block_contents'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/scss/parser.rb:42:in `parse'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/engine.rb:393:in `_to_tree'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/engine.rb:268:in `render'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:329:in `block in watch'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
+/Users/dcastillo/.rvm/gems/ruby-2.0.0-p353/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...\"generic/text\",\": expected file to import (string or url()), was \"<<<<<<< HEAD\"\A         on line 31 of /Users/dcastillo/Sites/freshly-squeezed/scss/freshly-squeezed.scss\A \A 26: \A 27: \A 28: //  generic\A 29:     \"generic/main\",\A 30:     \"generic/text\",\A 31: <<<<<<< HEAD\A 32:     \"generic/tables\",\A 33:     \"generic/lists\",\A 34:     \"generic/inputs\",\A 35:     \"generic/forms\",\A 36: "; }

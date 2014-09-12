@@ -9,6 +9,9 @@
 //  use flexbox?
     $use-flexbox: true !default;
 
+//  use normalize
+    $use-normalize: true !default;
+
 
 //  grid column count
-    $grid-columns: 12 !default;
+    $grid-columns: 8 !default;
