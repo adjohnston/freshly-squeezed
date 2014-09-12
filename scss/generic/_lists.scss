@@ -3,25 +3,21 @@
 //  ----------------
 
     ul, ol {
-      // @extend %gutter-left;
+      @extend %gutter-left;
     }
 
     ul, ol, dl {
-      // @extend %margin-bottom-only;
+      @extend %margin-bottom-only;
     }
 
     dl {
-      // @extend %clearfix;
+
     }
 
     dt {
-      // @extend %float-left;
 
-      // font-weight: $font-weight-bold;
-      // clear: left;
     }
 
     dd {
-      // @extend %float-left;
-      // margin-left: 0;
+      @extend %margin-left-none;
     }
