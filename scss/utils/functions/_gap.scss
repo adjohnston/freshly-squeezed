@@ -2,8 +2,8 @@
 //  gap : functions : utils
 //  -----------------------
 
-    @function gap($num-of-gaps: 1, $pixel-offset: 0px, $font-size: $base-font-size) {
+    @function gap($num-of-gaps: 1, $pixel-offset: 0px) {
 
-      @return ($base-line-height * $font-size) * $num-of-gaps + 0.0001;
+      @return ($base-line-height * $base-font-size) * $num-of-gaps + $pixel-offset + 0.0001;
 
     }
