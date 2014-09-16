@@ -18,7 +18,7 @@
   "ignore": [
     "**/*",
     "!css/freshly-squeezed.css",
-    "!scss/**/*.scss",
+    "!scss/**/*",
     "!config.rb"
   ]
 }
