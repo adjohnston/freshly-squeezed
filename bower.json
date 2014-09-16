@@ -1,6 +1,6 @@
 {
   "name": "freshly-squeezed",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/adjohnston/freshly-squeezed",
   "main": "freshly-squeezed.css",
   "authors": [
@@ -18,7 +18,7 @@
   "ignore": [
     "**/*",
     "!css/freshly-squeezed.css",
-    "!scss/*",
+    "!scss/**/*.scss",
     "!config.rb"
   ]
 }
