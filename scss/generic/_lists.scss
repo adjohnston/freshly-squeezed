@@ -1,6 +1,6 @@
-//  ----------------
-//  lists :: generic
-//  ----------------
+//  ---------------
+//  lists : generic
+//  ---------------
 
     ul, ol {
       @extend %gutter-left;
@@ -10,13 +10,9 @@
       @extend %margin-bottom-only;
     }
 
-    dl {
+    // dl {}
 
-    }
-
-    dt {
-
-    }
+    // dt {}
 
     dd {
       @extend %margin-left-none;

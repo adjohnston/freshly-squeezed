@@ -1,35 +1,26 @@
-//  ----------------
-//  forms :: generic
-//  ----------------
+//  ---------------
+//  forms : generic
+//  ---------------
 
 //  form
-//  ----
     form {
 
       //  form - ordered list
-      //  -------------------
-          ol{
-
+          ol {
             list-style-type: none;
           }
 
 
       //  form - list item
-      //  ----------------
-          li {
-
-          }
+          // li {}
 
 
       //  form - label
-      //  ------------
           label {
             font-weight: $font-bold;
           }
-
-    //  fieldset
-    //  --------
-        fieldset {
-
-        }
     }
+
+
+//  fieldset
+    // fieldset {}
