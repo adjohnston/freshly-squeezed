@@ -39,10 +39,10 @@
               @if $is-responsive {
 
                 //  tablet spans
-                    @include generate-spans(check-division($grid-columns, 2), 992px);
+                    @include generate-spans(check-division($grid-columns, 2), $lap-viewport);
 
                 //  mobile spans
-                    @include generate-spans(check-division($grid-columns, 4), 600px);
+                    @include generate-spans(check-division($grid-columns, 4), $tab-viewport);
               }
 
 
