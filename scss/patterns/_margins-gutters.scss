@@ -25,38 +25,40 @@
       margin-top: 0;
     }
 
-    %margin-right-none {
-      margin-right: 0;
-    }
-
-    %margin-bottom-none {
-      margin-bottom: 0;
-    }
-
     %margin-left-none {
       margin-left: 0;
     }
 
+    %margin-right {
+      margin-right: gap();
+    }
+
+    %margin-bottom {
+      margin-bottom: gap();
+    }
+
 
 //  gutters
+    %gutter {
+      padding-left:  gap();
+      padding-right: gap();
+    }
+
+    %gutter-small {
+      padding-left:  gap(.5);
+      padding-right: gap(.5);
+    }
+
     %gutter-none {
       padding: 0;
     }
 
-    %gutter-top {
-      padding-top: gap();
-    }
+    @each $dir in top, right, bottom, left {
 
-    %gutter-right {
-      padding-right: gap();
-    }
+      %gutter-#{$dir} {
+        padding-#{$dir}: gap();
+      }
 
-    %gutter-bottom {
-      padding-bottom: gap();
-    }
-
-    %gutter-left {
-      padding-left: gap();
     }
 
     %gutter-left-only {

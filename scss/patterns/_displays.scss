@@ -1,0 +1,27 @@
+//  ------------------
+//  display : patterns
+//  ------------------
+
+//  block
+    %display-block {
+      display: block;
+    }
+
+
+//  inline block
+    %display-inline-block {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+
+//  inline
+    %display-inline {
+      display: inline;
+    }
+
+
+//  none
+    %display-none {
+      display: none;
+    }

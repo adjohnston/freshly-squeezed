@@ -6,8 +6,7 @@
 
       //  flexbox spans
           .spans {
-            padding-left:  gap(.5);
-            padding-right: gap(.5);
+            @extend %gutter-small;
 
             @each $vendor in -webkit-, -moz-, -ms-, "" {
 
@@ -19,8 +18,7 @@
 
           //  spans
               [class*="span__"] {
-                padding-left:  gap(.5);
-                padding-right: gap(.5);
+                @extend %gutter-small;
 
                 @each $vendor in -webkit-, -moz-, -ms-, "" {
 
@@ -48,6 +46,15 @@
 
     } @else {
 
-      //  classic grid system to go here
+      //  inline block spans
+          .spans {
+            @extend %gutter-small;
+          }
+
+          //  spans
+              [class*="span__"] {
+                @extend %gutter-small;
+                @extend %display-inline-block;
+              }
 
     }

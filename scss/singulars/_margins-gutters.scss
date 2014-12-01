@@ -1,0 +1,54 @@
+//  -----------------------------
+//  margins & gutters : singulars
+//  -----------------------------
+
+//  margins
+    .margin-none {
+      @extend %margin-none;
+    }
+
+    .margin-right {
+      margin-right: gap();
+    }
+
+    .margin-bottom {
+      margin-bottom: gap();
+    }
+
+    .margin-bottom-only {
+      margin: 0 0 gap();
+    }
+
+    .margin-centre {
+      @extend %margin-center;
+    }
+
+
+//  gutters
+    .gutter {
+      @extend %gutter;
+    }
+
+    .gutter-small {
+      @extend %gutter-small;
+    }
+
+    .gutter-none {
+      @extend %gutter-none;
+    }
+
+    @each $dir in top, right, bottom, left {
+
+      .gutter-#{$dir} {
+        @extend %gutter-#{$dir};
+      }
+
+    }
+
+    .gutter-left-only {
+      padding: 0 0 0 gap();
+    }
+
+    .gutter-right-only {
+      padding: 0 gap() 0 0;
+    }

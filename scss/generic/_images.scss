@@ -1,0 +1,10 @@
+//  ----------------
+//  images : generic
+//  ----------------
+
+    img {
+      @extend %display-inline-block;
+
+      max-width: 100%;
+      height:    auto;
+    }
