@@ -21,20 +21,20 @@
       margin: 0 gap() 0 0;
     }
 
-    %margin-top-none {
-      margin-top: 0;
+    @each $dir in right, bottom {
+
+      %margin-#{$dir} {
+        margin-#{$dir}: gap();
+      }
+
     }
 
-    %margin-right {
-      margin-right: gap();
-    }
+    @each $dir in top, left {
 
-    %margin-bottom {
-      margin-bottom: gap();
-    }
+      %margin-#{$dir}-none {
+        margin-#{$dir}: 0;
+      }
 
-    %margin-left-none {
-      margin-left: 0;
     }
 
 

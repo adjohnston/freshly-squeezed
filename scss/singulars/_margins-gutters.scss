@@ -7,20 +7,14 @@
       @extend %margin-none;
     }
 
-    .margin-right {
-      @extend %margin-right;
-    }
-
-    .margin-bottom {
-      @extend %margin-bottom;
+    @each $dir in centre, right, bottom {
+      .margin-#{$dir} {
+        @extend %margin-#{$dir};
+      }
     }
 
     .margin-bottom-only {
       @extend %margin-bottom-only;
-    }
-
-    .margin-centre {
-      @extend %margin-centre;
     }
 
 
@@ -29,26 +23,14 @@
       @extend %gutter;
     }
 
-    .gutter-small {
-      @extend %gutter-small;
-    }
-
-    .gutter-none {
-      @extend %gutter-none;
-    }
-
-    @each $dir in top, right, bottom, left {
-
+    @each $dir in small, none, top, right, bottom, left {
       .gutter-#{$dir} {
         @extend %gutter-#{$dir};
       }
-
     }
 
-    .gutter-left-only {
-      @extend %gutter-left-only;
-    }
-
-    .gutter-right-only {
-      @extend %gutter-right-only;
+    @each $dir in left, right {
+      .gutter-#{$dir}-only {
+        @extend %gutter-#{$dir}-only;
+      }
     }
