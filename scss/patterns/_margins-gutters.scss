@@ -8,7 +8,7 @@
       margin: 0;
     }
 
-    %margin-center {
+    %margin-centre {
       margin-left:  auto;
       margin-right: auto;
     }
@@ -17,16 +17,12 @@
       margin: 0 0 gap();
     }
 
-    %margin-left-only {
-      margin: 0 0 0 gap();
+    %margin-right-only {
+      margin: 0 gap() 0 0;
     }
 
     %margin-top-none {
       margin-top: 0;
-    }
-
-    %margin-left-none {
-      margin-left: 0;
     }
 
     %margin-right {
@@ -35,6 +31,10 @@
 
     %margin-bottom {
       margin-bottom: gap();
+    }
+
+    %margin-left-none {
+      margin-left: 0;
     }
 
 

@@ -8,19 +8,19 @@
     }
 
     .margin-right {
-      margin-right: gap();
+      @extend %margin-right;
     }
 
     .margin-bottom {
-      margin-bottom: gap();
+      @extend %margin-bottom;
     }
 
     .margin-bottom-only {
-      margin: 0 0 gap();
+      @extend %margin-bottom-only;
     }
 
     .margin-centre {
-      @extend %margin-center;
+      @extend %margin-centre;
     }
 
 
@@ -46,9 +46,9 @@
     }
 
     .gutter-left-only {
-      padding: 0 0 0 gap();
+      @extend %gutter-left-only;
     }
 
     .gutter-right-only {
-      padding: 0 gap() 0 0;
+      @extend %gutter-right-only;
     }
