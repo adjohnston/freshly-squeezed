@@ -6,13 +6,19 @@
     
       @for $n from 0 through $order-numbers {
       
-        .order-before-#{$n} {
-          order: -#{$n};
-        }
+        //  move flex items before other flex items
+            .order-before-#{$n} {
+              @each $prefix in -webkit-, -moz-, -ms-flex-, "" {
+                #{$prefix}order: -#{$n};
+              }
+            }
         
-        .order-after-#{$n} {
-          order: #{$n};
-        }
+        //  move flex items after other flex items
+            .order-after-#{$n} {
+              @each $prefix in -webkit-, -moz-, -ms-flex-, "" {
+                #{$prefix}order: #{$n};
+              }
+            }
       
       }
       
