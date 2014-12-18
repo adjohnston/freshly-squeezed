@@ -1,0 +1,19 @@
+//  -----------------
+//  order : singulars
+//  -----------------
+
+    @if use-flexbox? {
+    
+      @for $n from 0 through $order-numbers {
+      
+        .order-before-#{$n} {
+          order: -#{$n};
+        }
+        
+        .order-after-#{$n} {
+          order: #{$n};
+        }
+      
+      }
+      
+    }
