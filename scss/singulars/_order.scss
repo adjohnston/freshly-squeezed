@@ -8,15 +8,15 @@
       
         //  move flex items before other flex items
             .order-before-#{$n} {
-              @each $prefix in -webkit-, -moz-, -ms-flex-, "" {
-                #{$prefix}order: -#{$n};
+              @each $vendor in -webkit-, -moz-, -ms-flex-, "" {
+                #{$vendor}order: -#{$n};
               }
             }
         
         //  move flex items after other flex items
             .order-after-#{$n} {
-              @each $prefix in -webkit-, -moz-, -ms-flex-, "" {
-                #{$prefix}order: #{$n};
+              @each $vendor in -webkit-, -moz-, -ms-flex-, "" {
+                #{$vendor}order: #{$n};
               }
             }
       
